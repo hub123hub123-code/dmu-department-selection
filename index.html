@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMU Students Department Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="dmu_logo.png" alt="DMU Logo" class="logo">
+        <h1>DMU Students Department Selection</h1>
+    </header>
+
+    <div class="form-container">
+        <form id="selection-form">
+            <div class="student-info">
+                <label for="username">Name:</label>
+                <input type="text" id="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <label for="idnumber">ID Number:</label>
+                <input type="text" id="idnumber" required>
+
+                <label for="year">Year:</label>
+                <input type="number" id="year" required>
+
+                <label for="semester">Semester:</label>
+                <input type="number" id="semester" required>
+                
+                <label for="grade">Grade 12 Result (20%):</label>
+                <input type="number" id="grade" required>
+                
+                <label for="gpa">Two Semester GPA (50%):</label>
+                <input type="number" id="gpa" required>
+
+                <label for="disability">Disability (5%):</label>
+                <input type="checkbox" id="disability">
+                
+                <label for="female">Female (5%):</label>
+                <input type="checkbox" id="female">
+            </div>
+            
+            <div class="department-selection">
+                <h2>Department Selection</h2>
+                <div class="departments">
+                    <div class="department">
+                        <label for="dept1">Department 1:</label>
+                        <input type="checkbox" class="dept" id="dept1" onclick="calculateChoiceMarks()">
+                        <span id="choice1"></span>
+                    </div>
+                    <!-- Add more departments up to Department 20 -->
+                    <div class="department">
+                        <label for="dept2">Department 2:</label>
+                        <input type="checkbox" class="dept" id="dept2" onclick="calculateChoiceMarks()">
+                        <span id="choice2"></span>
+                    </div>
+                    <!-- Repeat for all 20 departments -->
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button type="button" onclick="submitForm()">Submit</button>
+                <button type="button" onclick="cancelForm()">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Contact Us: <a href="mailto:developer@example.com">developer@example.com</a></p>
+        <p>Follow us on <a href="https://t.me/Key_Light_Electrical">Telegram</a> | <a href="https://www.linkedin.com/in/dmu">LinkedIn</a></p>
+        <p>&copy; 2025 DMU. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

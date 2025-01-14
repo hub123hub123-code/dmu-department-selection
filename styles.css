@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo {
+    width: 50px;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.student-info label,
+.department-selection label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.student-info input,
+.department-selection input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003060;
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+}
+
+.department {
+    margin-bottom: 15px;
+}
+
+.department span {
+    margin-left: 10px;
+    font-weight: bold;
+}
